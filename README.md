@@ -45,6 +45,12 @@ git clone https://github.com/Ensea-upb/synthetic-control-ai-dashboard
 
 cd synthetic-control-ai-dashboard
 
+local_model:
+
+voici les references du model preentrainer utiliser. il faut tout simplement creer un dossier appeller local_models et telecharger le moedele IA:
+
+https://huggingface.co/OpenVINO/Qwen2.5-VL-7B-Instruct-int4-ov
+
 Install dependencies:
 
 pip install -r requirements.txt
