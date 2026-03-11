@@ -45,12 +45,6 @@ git clone https://github.com/Ensea-upb/synthetic-control-ai-dashboard
 
 cd synthetic-control-ai-dashboard
 
-local_model:
-
-voici les references du model preentrainer utiliser. il faut tout simplement creer un dossier appeller local_models et telecharger le moedele IA:
-
-https://huggingface.co/OpenVINO/Qwen2.5-VL-7B-Instruct-int4-ov
-
 Install dependencies:
 
 pip install -r requirements.txt
@@ -59,7 +53,37 @@ Run the application:
 
 streamlit run app/0_Acceuil.py
 
+## Local Models
 
+The application relies on a pretrained AI model that is **not included in the repository** because of its large size.
+
+To use the AI features, you need to manually download the model.
+
+### Steps
+
+1. Create a folder named `local_models` at the root of the project:
+
+```bash
+mkdir local_models
+Download the pretrained model from the following link:
+
+https://huggingface.co/OpenVINO/Qwen2.5-VL-7B-Instruct-int4-ov
+
+Place the downloaded model inside the local_models folder.
+
+Expected structure
+
+sc_app/
+│
+├── local_models/
+│   └── Qwen2.5-VL-7B-Instruct-int4-ov/
+│
+├── sc_core/
+├── app_ui/
+├── pages/
+├── IA_integration/
+└── requirements.txt
+```
 ---
 
 ## AI Assistant
